@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fbf7f4" />
+    <meta
+      name="description"
+      content="Discover thoughtful hair, nail, makeup and skincare services at Syabonga Beauty Salon. Your beauty, our passion."
+    />
+    <title>Syabonga Beauty Salon | Your Beauty, Our Passion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">
+      <span>Thoughtful beauty. A little time just for you.</span>
+      <a href="#booking">Plan your visit <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Syabonga Beauty Salon home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-copy"><strong data-business="name">Syabonga</strong><small>BEAUTY SALON</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#about">Our story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Kind words</a>
+        <a class="nav-cta" href="#booking">Book a visit <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="A relaxing, beautifully styled salon interior"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow light-eyebrow"><span></span> YOUR MOMENT, YOUR GLOW</p>
+          <h1 id="hero-title">Your Beauty,<br /><em>Our Passion.</em></h1>
+          <p class="hero-intro">Enhancing your natural beauty with professional care, style, and confidence.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#booking">Book an appointment <span aria-hidden="true">↗</span></a>
+            <a class="text-link light-link" href="#services">Explore our services <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>BEAUTY, WITH HEART</span></div>
+        <div class="hero-index">01 <span></span> 03</div>
+      </section>
+
+      <section class="welcome section-pad" id="about">
+        <div class="welcome-image-wrap">
+          <img
+            class="welcome-image"
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=82"
+            alt="Stylist carefully working on a client's hair"
+            loading="lazy"
+          />
+          <div class="image-stamp"><span>CARE</span><i>✳</i><span>CONFIDENCE</span></div>
+        </div>
+        <div class="welcome-copy">
+          <p class="eyebrow"><span></span> A WARM WELCOME</p>
+          <h2>A space to feel<br /><em>beautifully you.</em></h2>
+          <p>At <span data-business="name">Syabonga Beauty Salon</span>, beauty is personal. We take time to listen, understand your style, and help you leave feeling refreshed, confident, and completely yourself.</p>
+          <p>From the first hello to the finishing touch, expect thoughtful care, a clean and welcoming space, and a team that loves what they do.</p>
+          <a class="text-link" href="#booking">Come say hello <span aria-hidden="true">↗</span></a>
+          <div class="welcome-signature">A little self-care goes a long way <span>♡</span></div>
+        </div>
+      </section>
+
+      <section class="services-section section-pad" id="services">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> THE GOOD STUFF</p>
+            <h2>Made for your<br /><em>kind of beautiful.</em></h2>
+          </div>
+          <p>Considered care, lovely details, and services that let you feel like the best version of you.</p>
+        </div>
+        <div class="service-grid" id="service-grid" aria-live="polite"></div>
+        <div class="center-action"><a class="button button-dark" href="#pricing">Explore our prices <span aria-hidden="true">↓</span></a></div>
+      </section>
+
+      <section class="looks-section section-pad" id="hair-inspiration">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> YOUR NEXT HAIR MOMENT</p>
+            <h2>Find your next<br /><em>favourite look.</em></h2>
+          </div>
+          <p>Explore sleek, soft, curly, and bob frontal looks. Tap a style to enlarge it, then tell us which one you love.</p>
+        </div>
+        <div class="look-category">
+          <div class="look-category-heading"><h3>Frontal styles</h3><span>SLEEK · SOFT · GLAM</span></div>
+          <div class="looks-grid" id="frontal-grid" aria-live="polite"></div>
+        </div>
+        <p class="looks-note">Illustrated style references, not a guarantee of an exact result. Replace them with your own photos in <code>scripts/config.js</code> whenever you're ready.</p>
+      </section>
+
+      <section class="quote-band">
+        <span class="quote-flower" aria-hidden="true">✳</span>
+        <p>“Beauty begins the moment<br />you decide to be yourself.”</p>
+        <span class="quote-credit">A LITTLE REMINDER FROM US</span>
+      </section>
+
+      <section class="pricing-section section-pad" id="pricing">
+        <div class="section-heading pricing-heading">
+          <div>
+            <p class="eyebrow"><span></span> GOOD TO KNOW</p>
+            <h2>Clear prices.<br /><em>Lovely choices.</em></h2>
+          </div>
+          <p>Our prices are a guide and may vary depending on your style, length, or treatment. Chat with us for a personalised quote.</p>
+        </div>
+        <div class="price-list" id="price-list"></div>
+        <p class="price-note">Prices shown in South African rand (ZAR). Please confirm your final quote when booking.</p>
+      </section>
+
+      <section class="gallery-section section-pad" id="gallery">
+        <div class="gallery-heading">
+          <div>
+            <p class="eyebrow light-eyebrow"><span></span> A LITTLE INSPIRATION</p>
+            <h2>Looks we <em>love.</em></h2>
+          </div>
+          <p>A moodboard of beauty moments. Tap a photo to take a closer look.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item" type="button" aria-label="View manicure photo" data-full-image="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1500&q=88">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=78" alt="Polished manicure inspiration" loading="lazy" />
+            <span>Little details</span>
+          </button>
+          <button class="gallery-item" type="button" aria-label="View makeup photo" data-full-image="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1500&q=88">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=78" alt="Soft makeup look inspiration" loading="lazy" />
+            <span>Your glow, your way</span>
+          </button>
+          <button class="gallery-item gallery-wide" type="button" aria-label="View beauty treatment photo" data-full-image="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1500&q=88">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1100&q=78" alt="Warm and welcoming salon interior" loading="lazy" />
+            <span>Your happy place</span>
+          </button>
+        </div>
+        <p class="gallery-disclaimer">Gallery images are inspiration photography and may not show work completed at our salon.</p>
+      </section>
+
+      <section class="booking-section section-pad" id="booking">
+        <div class="booking-aside">
+          <p class="eyebrow"><span></span> YOUR TIME, YOUR WAY</p>
+          <h2>Let's make<br /><em>you a little time.</em></h2>
+          <p>Tell us what you have in mind. We’ll help you find a time that works and talk through the details together.</p>
+          <div class="booking-contact">
+            <span class="contact-icon" aria-hidden="true">✳</span>
+            <div><small>PREFER A CHAT?</small><a class="contact-whatsapp" href="#booking" data-whatsapp-link>Message us on WhatsApp ↗</a></div>
+          </div>
+          <p class="demo-note" id="booking-mode-note">This enquiry form is a demo. It does not save or confirm appointments.</p>
+        </div>
+        <form class="booking-form" id="booking-form">
+          <div class="form-heading"><span>01 / BOOKING ENQUIRY</span><span>ALL FIELDS MARKED * ARE REQUIRED</span></div>
+          <div class="form-row">
+            <label>Full name *<input name="name" type="text" autocomplete="name" placeholder="Your name" required /></label>
+            <label>Phone number *<input name="phone" type="tel" autocomplete="tel" placeholder="+27 00 000 0000" required /></label>
+          </div>
+          <label>Email address <span class="optional">(optional)</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" /></label>
+          <div class="form-row">
+            <label>Service you'd love *
+              <select name="service" id="booking-service" required>
+                <option value="">Choose a service</option>
+              </select>
+            </label>
+            <label>Preferred date *<input name="date" type="date" required /></label>
+          </div>
+          <div class="form-row">
+            <label>Preferred time *
+              <select name="time" required>
+                <option value="">Choose a time</option>
+                <option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option>
+                <option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option>
+              </select>
+            </label>
+            <label>Anything else? <span class="optional">(optional)</span><input name="message" type="text" placeholder="Tell us a little more" /></label>
+          </div>
+          <button class="button button-dark form-submit" type="submit">Send booking enquiry <span aria-hidden="true">↗</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-privacy">Submitting this demo form does not save your details or confirm an appointment.</p>
+        </form>
+      </section>
+
+      <section class="testimonial-section section-pad" id="reviews">
+        <p class="eyebrow"><span></span> WORDS THAT WARM OUR HEARTS</p>
+        <h2>A little love from<br /><em>our lovely people.</em></h2>
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“I felt so welcomed and cared for from the moment I arrived. I left feeling like myself, just with an extra little glow.”</blockquote>
+          <p>— Sample testimonial · Replace with a genuine client review</p>
+        </div>
+        <span class="testimonial-flower" aria-hidden="true">✳</span>
+      </section>
+
+      <section class="contact-section section-pad" id="contact">
+        <div class="contact-main">
+          <p class="eyebrow light-eyebrow"><span></span> COME ON IN</p>
+          <h2>Your next<br /><em>feel-good moment.</em></h2>
+          <p>We’d love to welcome you. Get in touch to ask a question, check availability, or plan your visit.</p>
+          <div class="contact-links">
+            <a data-contact="phone" href="#contact"><span>CALL US</span><strong data-business="phone">Add your phone number</strong></a>
+            <a data-contact="email" href="#contact"><span>SEND A NOTE</span><strong data-business="email">Add your email address</strong></a>
+            <a data-whatsapp-link href="#booking"><span>WHATSAPP</span><strong>Start a conversation ↗</strong></a>
+          </div>
+        </div>
+        <div class="contact-details">
+          <div><span class="detail-icon" aria-hidden="true">⌖</span><div><small>FIND THE SALON</small><p data-business="address">Add your salon address</p></div></div>
+          <div><span class="detail-icon" aria-hidden="true">◷</span><div><small>WHEN WE'RE HERE</small><p data-business="hours">Add your business hours</p></div></div>
+          <a class="map-link" data-business-link="map" href="#contact" target="_blank" rel="noreferrer">Open map for directions <span aria-hidden="true">↗</span></a>
+          <div class="map-placeholder" id="map-placeholder">
+            <span aria-hidden="true">⌖</span>
+            <p>Add your salon address in <code>scripts/config.js</code> to enable map directions.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-copy"><strong data-business="name">Syabonga</strong><small>BEAUTY SALON</small></span>
+      </a>
+      <p>Made with care, just like you. <span>♡</span></p>
+      <div class="footer-bottom"><span>© <span id="year"></span> Syabonga Beauty Salon</span><a href="#home">Back to top ↑</a></div>
+    </footer>
+
+    <a class="floating-whatsapp" data-whatsapp-link href="#booking" aria-label="Book through WhatsApp">
+      <span class="whatsapp-icon" aria-hidden="true">◔</span><span class="whatsapp-label">Let's chat</span>
+    </a>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Gallery image">
+      <button class="lightbox-close" type="button" aria-label="Close enlarged image">×</button>
+      <img src="" alt="" />
+      <p></p>
+    </dialog>
+  </body>
+</html>
